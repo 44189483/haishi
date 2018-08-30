@@ -1,0 +1,28 @@
+<include file="Public/index/head.html" />
+<title>泉州海丝户外运动俱乐部-会员</title>
+<link rel="stylesheet" href="__PUBLIC__/index/css/huiyuan.css">
+<link rel="stylesheet" href="__PUBLIC__/index/css/head-foot.css">
+</head>
+<body>
+<div class="conter">
+
+    <div class="art">
+        <img src="__PUBLIC__/index/images/logo1.png" alt="">
+        <p class="art1">
+          
+          <if condition="$member['status'] eq 0">
+            <a href="{{:U('User/info')}}" class="art1-2">加入会员</a>  
+          </if>
+          
+        </p>
+    </div>
+
+    <div class="nav">
+        <a href="{{:U('User/single',array('tid'=>5))}}"><img src="__PUBLIC__/index/images/nav1.png" alt="">会员制度</a>
+        <a href="{{:U('User/single',array('tid'=>4))}}"><img src="__PUBLIC__/index/images/nav2.png" alt="">关于海丝</a>
+        <a href="{{:U('User/single',array('tid'=>6))}}"><img src="__PUBLIC__/index/images/nav3.png" alt="">会费详情</a>
+        <a href="{{:U('User/notice')}}"><img src="__PUBLIC__/index/images/nav4.png" alt="">通知消息</a>
+        <span></span>
+    </div>
+<include file="Public/index/share.html" />
+<include file="Public/index/foot.html" />

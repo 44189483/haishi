@@ -1,0 +1,18 @@
+.art,.art1,.art2{
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 10px;
+	position: relative;
+	color: #808080;
+	border-bottom: solid 1px #c3c1c1; 
+}
+.art>a,.art1>a,.art2>a{
+	display: block;
+	width: 93%;
+	padding-left: 3%;
+	margin-left: 2%;
+	color: #808080;
+	text-decoration: none;
+	line-height: 45px;
+	border-bottom: solid 1px #e6e6e6;
+}

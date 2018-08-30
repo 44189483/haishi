@@ -1,0 +1,100 @@
+/*按钮*/
+a{
+	text-decoration: none;
+	color: #4d4d4d;
+}
+.head{
+	width: 100%;
+	background-color: #4d4d4d;
+	position: relative;
+	margin-bottom: 0px !important;
+	border-bottom: solid 1px #d0d0d0;
+	color: #fff;
+}
+.art{
+	display: block;
+	text-decoration: none;
+	color: #4d4d4d;
+	width: 94%;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-image: url(../images/bg.png);
+	background-size: 100% 100%;
+	position: relative;
+	margin-bottom: 10px;
+	margin-top: -2px;
+}
+.art>img{
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    border: solid 5px #fff;
+    border-radius: 50%;
+}
+.art1{
+	margin-bottom: 25%;
+	text-align: center;
+}
+.art1>a{
+	display: inline-block;
+	width: 30%;
+	line-height: 35px;
+	color: #fff;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.art1-1{
+	background-color: #2288e5;
+}
+
+
+
+/*导航*/
+.nav{
+	width: 96%;
+	margin-left: 2%;
+	background-color: #fff;
+	border-radius: 20px;
+	border-bottom: solid 1px #ccc;
+	margin-top: -20%;
+	position: relative;
+	z-index: 3;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.nav>p{
+	width: 90%;
+	margin-left: 5%;
+	border-bottom: solid 1px #ccc;
+	line-height: 45px;
+	font-size: 15px;
+}
+.nav>p:last-child{
+	border-bottom: none;
+}
+.nav>p>input{
+	width: 50%;
+	line-height: 32px;
+	border: none;
+	outline: none;
+	font-size: 15px;
+}
+
+
+.zhuce{
+	display: block;
+	width: 60%;
+	line-height: 40px;
+	background-color: #2288e5;
+	margin-left: 20%;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	margin-top: 10%;
+	border-radius: 5px;
+	border: none;
+}

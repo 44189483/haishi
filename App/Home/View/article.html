@@ -1,0 +1,149 @@
+<include file="Public/index/head.html" />
+<title>泉州海丝户外运动俱乐部-{{$nav}}</title>
+<link rel="stylesheet" href="__PUBLIC__/index/css/<if condition="$main eq 1">saishi.css<elseif condition="$main eq 2"/>huwai.css<elseif condition="$main eq 3"/>
+peixun.css<elseif condition="$main eq 4"/>gongyi.css</if>" />
+<link rel="stylesheet" href="__PUBLIC__/index/css/head-foot.css" />
+<link rel="stylesheet" href="__PUBLIC__/index/css/jqalert.css" />
+<script src="__PUBLIC__/index/js/jquery.1.9.1.js"></script>
+<script type="text/javascript" src="__PUBLIC__/index/js/jqalert.js"></script>
+<script type="text/javascript">
+  var i = 1;
+  $(function () {
+    $(window).scroll(function () {
+        //$(window).scrollTop()这个方法是当前滚动条滚动的距离
+        //$(window).height()获取当前窗体的高度
+        //$(document).height()获取当前文档的高度
+        var bot = 50; //bot是底部距离的高度
+        if ((bot + $(window).scrollTop()) >= ($(document).height() - $(window).height())) {
+          //当底部基本距离+滚动的高度〉=文档的高度-窗体的高度时；
+          //异步加载数据
+          $.ajax({
+            type: "GET",
+            url: "{{:U('Article/ajaxdata')}}",
+            data: {'page': i,'cid':{{$cid}}},
+            dataType: "json",
+            async:false,
+            beforeSend:function(){
+              $("#loading").show();
+            },
+            complete:function(){
+              $("#loading").hide();
+            },
+            success: function (json) {
+              if(json != 0){
+                $(json).each(function () {
+                  <include file="Public/index/ajaxdata.html" />       
+                  $("#list").fadeIn().append(str.replace('undefined',''));
+                });
+                i++;
+              }else{
+                $("#noresult").show();
+              }
+            }
+          });
+
+        }
+    });
+  });
+
+  //报名
+  function signup(id){
+
+    if(id != ''){
+      $.ajax({
+          type: "POST",
+          url: "{{:U('article/signup')}}",
+          data: {'id': id},
+          success: function (data) {
+            var text = data.replace(/\s/g, "");
+            if(text != ''){
+              jqalert({
+                title: '提示',
+                content: text
+              });
+              return false;
+            }else{
+              //确认提交
+              window.location.href = "/index.php/Home/User/info/aid/"+id;
+            } 
+          }
+      });
+    } 
+
+  }
+
+</script> 
+
+</head>
+
+<div class="conter">
+   
+    <div class="btn">
+        <volist name="select" id="vo">
+            <a href="{{:U('Article/index',array('main'=>$main,'cid'=>$key))}}" <if condition="$cid eq $key">class="btn-bg"</if>>{{$vo}}</a>
+            <if condition="$main neq 2">
+                <span></span>
+            </if>
+        </volist>
+    </div>
+        
+    <div id="list">
+
+        <!--赛事-->
+        <if condition="$main eq 1">
+            <volist name="rows" id="vo">
+                <div class="art">
+                    <img src="/{{$vo.articleAttach}}" alt="" />
+                    <p class="art-1"><a href="{{:U('Article/detail',array('main'=>$main,'id'=>$vo['articleId']))}}">{{$vo.articleTitle}}</a></p>
+                    <p class="art-2">{{$vo.articleContent|htmlspecialchars_decode|strip_tags|msubstr=###,0,40,'utf-8'}}</p>
+                    <p class="art-3">{{$vo.addDate}}</p>
+                    <span class="sp1" onclick="signup({{$vo.articleId}})">我要报名</span>
+                </div>
+            </volist>
+        </if>
+
+        <!--户外-->
+        <if condition="$main eq 2">
+            <volist name="rows" id="vo">
+                <div class="art">
+                    <p class="art-1"><a href="{{:U('Article/detail',array('main'=>$main,'id'=>$vo['articleId']))}}">{{$vo.articleTitle}}</a></p>
+                    <img src="/{{$vo.articleAttach}}" alt="" class="art-2" />
+                    <p class="art-3">
+                        活动日期：{{$vo.addDate}}
+                        <span class="sp1" onclick="signup({{$vo.articleId}})">我要报名</span>
+                    </p>
+                </div> 
+            </volist>
+        </if>
+
+        <!--培训-->
+        <if condition="$main eq 3">
+            <volist name="rows" id="vo">
+                <div class="art">
+                    <p class="art-1"><a href="{{:U('Article/detail',array('main'=>$main,'id'=>$vo['articleId']))}}">{{$vo.articleTitle}}</a></p>
+                    {{$vo.articleContent|htmlspecialchars_decode}}
+                    <p class="art-3">
+                        {{$vo.addDate}}
+                        <object data="" type="">
+                            <a class="sp1"><img src="images/shipin.png" alt="">235532</a>
+                        </object>
+                    </p>
+                </div>  
+            </volist>
+        </if>
+
+        <!--公益-->
+        <if condition="$main eq 4">
+            <volist name="rows" id="vo">
+                <div class="art">
+                    <p class="art-1"><a href="{{:U('Article/detail',array('main'=>$main,'id'=>$vo['articleId']))}}">{{$vo.articleTitle}}</a></p>
+                    <img src="/{{$vo.articleAttach}}" alt="" class="art-2">
+                    <p class="art-3">{{$vo.addDate}}</p>  
+                </div> 
+            </volist>
+        </if>
+
+    </div>
+                    
+<include file="Public/index/share.html" />
+<include file="Public/index/foot.html" />

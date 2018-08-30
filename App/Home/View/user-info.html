@@ -1,0 +1,225 @@
+<include file="Public/index/head.html" />
+<title>泉州海丝户外运动俱乐部-会员加入</title>
+<link rel="stylesheet" href="__PUBLIC__/index/css/jiaruhuiyuan.css" />
+<link rel="stylesheet" href="__PUBLIC__/index/css/head-foot.css" />
+<link rel="stylesheet" href="__PUBLIC__/index/css/jqalert.css" />
+<script type="text/javascript" src="__PUBLIC__/index/js/jquery.1.9.1.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/index/js/jqalert.js"></script>
+
+</head>
+<body>
+<div class="conter">
+    
+    <form name="form" id="form" method="POST">
+        <div class="art">
+            <img src="__PUBLIC__/index/images/logo1.png" alt="">
+            <p class="art1">
+              <a href="" class="art1-1"></a>
+            </p>
+
+        </div>
+        <div class="nav">
+           <p>姓&nbsp;&nbsp;&nbsp;&nbsp;名：<input type="text" name="realname" id="realname" value="{{$row.realname}}" /></p>
+           <p>手机号码：<input type="text" name="mobile" id="mobile" value="{{$row.mobile}}" /></p>
+           <p>身份证：<input type="text" name="card" id="card" value="{{$row.card}}" /></p>
+        </div>
+        <input type="hidden" name="act" value="save" />
+        <button type="button" onclick="saveinfo()" class="zhuce">提交</button>
+		<br/>
+		<p align="center">
+
+            <neq name="aid" value="">
+                <neq name="res" value="">
+                报名费:{{$res.price}}元 / {{$res.vipPrice}}元(会员价)
+                </neq>
+            <else />
+                <neq name="amount" value="">
+                会员费:{{$amount}}元
+                </neq>
+            </neq>
+
+		</p>
+    </form>
+
+<include file="Public/index/share.html" />
+
+    <script type="text/javascript">
+
+    function saveinfo(){
+        
+        var aid = '{{$aid}}';
+        var out_trade_no = '{{$out_trade_no}}';
+
+        var realname = $("#realname");
+        if(realname.val() == ''){
+            jqalert({
+                title: '提示',
+                content: '姓名必填'
+            });
+            return false;
+        }
+
+        var mobile = $("#mobile");
+        if(mobile.val() == ''){
+            jqalert({
+                title: '提示',
+                content: '手机号必填'
+            });
+            return false;
+        }
+
+        var str = /^1\d{10}$/;
+        if(!str.test(mobile.val())){
+            jqalert({
+                title: '提示',
+                content: '手机格式有误'
+            });
+            return false;
+        }
+
+        var card = $("#card");
+        if(card.val() == ''){
+            jqalert({
+                title: '提示',
+                content: '身份证必填'
+            });
+            return false;
+        }
+
+        var str = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+        if(!str.test(card.val())){
+            jqalert({
+                title: '提示',
+                content: '身份证格式有误'
+            });
+            return false;
+        }
+
+        $.ajax({  
+          type: "POST",  
+          url: "{{:U('User/saveinfo')}}",  
+          data: {"mobile":mobile.val(),"card":card.val(),"realname":realname.val(),"out_trade_no":out_trade_no,"aid":aid},
+          cache: false,
+          beforeSend: function(){
+          },  
+          success: function(data){ 
+
+            if(aid != ''){
+				<if condition="$amount gt 0">
+                //调微信支付
+                jsApiCall();
+				<else />
+				jqalert({
+                    title: '提示',
+                    content: '报名成功',
+					yesfn: function() {
+					  window.location.href='{{$url}}';
+					}
+                });
+				</if>
+            }else{
+                <if condition="$row['status'] eq 0">
+                //调微信支付
+                jsApiCall();
+                <else />
+                jqalert({
+                    title: '提示',
+                    content: '更新成功'
+                });
+                </if>
+            }
+          },
+        error: function(jqXHR, textStatus, errorMsg){
+          }   
+        });
+    }
+
+    <if condition="(($row['status'] eq 0) OR ($aid neq '')) AND ($amount gt 0)">
+	
+
+    //调用微信JS api 支付
+    function jsApiCall()
+    {
+        WeixinJSBridge.invoke(
+            'getBrandWCPayRequest',
+            {{$jsApiParameters}},
+            function(res){
+                //WeixinJSBridge.log(res.err_msg);
+                //alert(res.err_code+res.err_desc+res.err_msg);
+                //
+                if (res.err_msg == "get_brand_wcpay_request:ok") {
+                
+                    jqalert({
+                        title: '提示',
+                        content: '支付成功',
+                        yesfn: function() {
+                            <if condition="$aid neq ''">
+                            window.location.href="{{$url}}";
+                            <else />
+                            window.location.reload();
+                            </if>
+                            
+                        },
+                        nofn: function() {
+                            
+                        }
+                    });
+                    
+                }else if (res.err_msg == "get_brand_wcpay_request:cancel") {  
+                    // message: "已取消微信支付!"
+                } 
+            }
+        );
+    }
+
+    function callpay()
+    {
+        if (typeof WeixinJSBridge == "undefined"){
+            if( document.addEventListener ){
+                document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+            }else if (document.attachEvent){
+                document.attachEvent('WeixinJSBridgeReady', jsApiCall); 
+                document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+            }
+        }else{
+            jsApiCall();
+        }
+    }
+
+    //获取共享地址
+    function editAddress()
+    {
+        WeixinJSBridge.invoke(
+            'editAddress',
+            {{$editAddress}},
+            function(res){
+                var value1 = res.proviceFirstStageName;
+                var value2 = res.addressCitySecondStageName;
+                var value3 = res.addressCountiesThirdStageName;
+                var value4 = res.addressDetailInfo;
+                var tel = res.telNumber;
+                
+                //alert(value1 + value2 + value3 + value4 + ":" + tel);
+            }
+        );
+    }
+    
+    window.onload = function(){
+        if (typeof WeixinJSBridge == "undefined"){
+            if( document.addEventListener ){
+                document.addEventListener('WeixinJSBridgeReady', editAddress, false);
+            }else if (document.attachEvent){
+                document.attachEvent('WeixinJSBridgeReady', editAddress); 
+                document.attachEvent('onWeixinJSBridgeReady', editAddress);
+            }
+        }else{
+            editAddress();
+        }
+    };
+
+    </if>
+
+    </script>
+
+<include file="Public/index/foot.html" />

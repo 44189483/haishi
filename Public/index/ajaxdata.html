@@ -1,0 +1,29 @@
+        str += '<div class="art">';
+
+        /*赛事*/
+        <if condition="$main eq 1">
+            str +='<img src="/'+this.articleAttach+'" alt="" /><p class="art-1"><a href="/index.php/Home/Article/detail/main/{{$main}}/id/'+this.articleId+'.html">'+this.articleTitle+'</a></p><p class="art-2">'+this.articleContent+'</p><p class="art-3">'+this.addDate+'</p><span class="sp1" onclick="signup('+this.articleId+')">我要报名</span>';
+        </if>
+
+        /*户外*/
+        <if condition="$main eq 2">
+            
+            str +='<p class="art-1"><a href="/index.php/Home/Article/detail/main/{{$main}}/id/'+this.articleId+'.html">'+this.articleTitle+'</a></p><img src="/'+this.articleAttach+'" alt="" class="art-2" /><p class="art-3">活动日期：'+this.addDate+'<span class="sp1" onclick="signup('+this.articleId+')">我要报名</span></p>'; 
+
+        </if>
+
+        /*培训*/
+        <if condition="$main eq 3">
+            
+            str +='<p class="art-1"><a href="/index.php/Home/Article/detail/main/{{$main}}/id/'+this.articleId+'.html">'+this.articleTitle+'</a></p>'+this.articleContent+'<p class="art-3">'+this.addDate+'<object data="" type=""><a class="sp1"><img src="images/shipin.png" alt="">235532</a></object></p>';
+
+        </if>
+
+        /*公益*/
+        <if condition="$main eq 4">
+            
+            str +='<p class="art-1"><a href="/index.php/Home/Article/detail/main/{{$main}}/id/'+this.articleId+'.html">'+this.articleTitle+'</a></p><img src="/'+this.articleAttach+'" alt="" class="art-2"><p class="art-3">'+this.addDate+'</p>';  
+                
+        </if>
+
+        str += "</div>";

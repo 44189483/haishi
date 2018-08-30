@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>会员管理</title>
+	<link rel="stylesheet" href="__PUBLIC__/admin/css/style.css" />
+	<script src="__PUBLIC__/admin/js/jquery-1.7.1.min.js"></script>
+	<script src="__PUBLIC__/admin/js/jQuery.plus.extend.js"></script>
+	<script src="__PUBLIC__/admin/js/jquery.main.js"></script>
+
+	<script type="text/javascript">
+	<!--
+		function delSelect(){
+			if (confirm('是否删除选中的信息?')){
+				document.form.submit();
+			}
+		}
+	//-->
+	</script>
+
+</head>
+
+<body class="bodyGrey">
+	<div class="mainTitle">会员管理</div>
+	<div class="twoTitle">
+	</div>
+	<form name="form" id="form" method="POST" action="__URL__/del/main/{{$main}}">
+	<div class="table02">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" id="tab">
+			<tr>
+				<th>头像</th>
+				<th>openid</th>
+				<th>匿名</th>
+				<th>真实姓名</th>
+				<th>性别</th>
+				<th>手机</th>
+				<th>身份证</th>
+				<th>时间</th>
+			</tr>
+			
+			<neq name="rows" value="">
+				<volist id="i" name="rows" key="k">
+				<tr class="<eq name="k%2" value="0">odd</eq>">
+					<td><img src="{{$i.avatar}}" alt="" /></td>
+					<td>{{$i.openid}}</td>
+					<td>{{$i.wxnick}}</td>
+					<td>{{$i.realname}}</td>
+					<td>
+						<if condition="$i.sex eq 1">男<else />女</if>
+					</td>
+					<td>{{$i.mobile}}</td>
+					<td>{{$i.card}}</td>
+					<td>{{$i.createTime}}</td>
+				</tr>
+				</volist>
+			<else/>
+				<tr class="odd">
+				  <td colspan="7" style="color:#FF0000;">暂无信息。。。</td>
+			    </tr>
+		    </neq>
+		</table>
+	</div>
+	<div class="pageWrap">
+		<div class="page">
+			{{$page}}
+		</div>
+	</div>
+	</form>
+</body>
+</html>

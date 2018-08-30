@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>{{$nav}}管理</title>
+	<link rel="stylesheet" href="__PUBLIC__/admin/css/style.css" />
+	<script src="__PUBLIC__/admin/js/jquery-1.7.1.min.js"></script>
+	<script src="__PUBLIC__/admin/js/jQuery.plus.extend.js"></script>
+	<script src="__PUBLIC__/admin/js/jquery.main.js"></script>
+
+	<script type="text/javascript">
+	<!--
+		function delSelect(){
+			if (confirm('是否删除选中的信息?')){
+				document.form.submit();
+			}
+		}
+	//-->
+	</script>
+
+</head>
+
+<body class="bodyGrey">
+	<div class="mainTitle">{{$nav}}管理</div>
+	<div class="twoTitle">
+		<span style="float:right;margin-right:20px;">
+			<form id="searchform" name="searchform" method="GET" action="">
+				<select name="cid" style="border:solid #000 1px;color:#666;height:25px;font-faimly:宋体;line-height:25px;">
+                    <option value="">-所属分类-</option>
+                    <volist id="i" name="select" key="k"> 
+                    <option value="{{$k}}" <if condition="$k==$cid"> selected="selected"</if>>-{{$i}}-</option>
+                    </volist>
+                </select>
+				<input type="text" name="title" style="border:solid #000 1px;color:#666;height:20px;font-faimly:宋体;width:200px;line-height:20px;" value="{{$title}}" onclick="this.value='';">&nbsp;
+				<input type="submit" name="btn" value="查询" style="border:solid #000 1px;" />
+			</form>
+		</span>
+	</div>
+	<form name="form" id="form" method="POST" action="__URL__/del/main/{{$main}}">
+	<div class="table02">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" id="tab">
+			<tr>
+				<th align="left"><input type="checkbox" id="CheckAll" onclick="selectAll(this,'id[]')" />全选</th>
+				<th>栏目</th>
+				<th>标题</th>
+				<if condition="($main eq 1) OR ($main eq 2) ">
+				<th>会员价</th>
+				<th>非会员价</th>
+				</if>
+				<th>排序</th>
+				<th>时间</th>
+				<th>发布</th>
+				<th>管理</th>
+			</tr>
+			
+			<neq name="rows" value="">
+				<volist id="i" name="rows" key="k">
+				<tr class="<eq name="k%2" value="0">odd</eq>">
+					<td><input type="checkbox" name="id[]" value="{{$i.articleId}}" /></td>
+					<td>{{$i.className}}</td>
+					<td>{{$i.articleTitle}}</td>
+					<if condition="($main eq 1) OR ($main eq 2) ">
+					<td><input type="text" value="{{$i.vipPrice}}" name="vipPrice" id="input_2_{{$i.articleId}}" onchange="saveData('article','vipPrice',this.value,'articleId',this.id);" size="2" onkeyup="this.value=this.value.replace(/[^0-9.]/g,'')"/></td>
+					<td><input type="text" value="{{$i.price}}" name="price" id="input_3_{{$i.articleId}}" onchange="saveData('article','price',this.value,'articleId',this.id);" size="2"  onkeyup="this.value=this.value.replace(/[^0-9.]/g,'')"/></td>
+					</if>
+					<td>
+						<input type="text" value="{{$i.articleOrd}}" name="articleOrd" id="input_1_{{$i.articleId}}" onchange="saveData('article','articleOrd',this.value,'articleId',this.id);" size="2"  onafterpaste="this.value=this.value.replace(/\D/g,'')" onkeyup="this.value=this.value.replace(/\D/g,'')"/>
+					</td>
+					<td>{{$i.addDate}}</td>
+					<td>
+						<input type="checkbox" <eq name="i['articleShow']" value="1">checked="checked"</eq> value="1" name="articleShow" id="{{$i.articleId}}" onchange="changeCheck('article','articleId','{{$i.articleId}}','articleShow');"/>
+					</td>
+					<td>
+						<if condition="($main eq 1) OR ($main eq 2) "> 
+						<a href="{{:U('Signup/index',array('aid'=>$i['articleId']))}}">报名人员</a>
+						</if>
+						<a href="__URL__/view/main/{{$main}}/id/{{$i.articleId}}" class='redlink'>修改</a>
+						<a href="__URL__/del/main/{{$main}}/id/{{$i.articleId}}" onClick="return confirm('确认要删除吗？');">删除</a>
+					</td>
+				</tr>
+				</volist>
+			<else/>
+				<tr class="odd">
+				  <td colspan="7" style="color:#FF0000;">暂无信息。。。</td>
+			    </tr>
+		    </neq>
+		</table>
+	</div>
+	<div class="pageWrap">
+		<div class="page">
+			{{$page}}
+			<input name="Submit" type="button" onclick="doSelect('id[]','确认要删除吗？');" value="删除选中" class="btn02">
+		</div>
+	</div>
+	</form>
+</body>
+</html>

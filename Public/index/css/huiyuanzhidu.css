@@ -1,0 +1,19 @@
+.title{
+	text-align: center;
+	font-size: 18px;
+}
+.date{
+	color: #ccc;
+	line-height: 35px;
+	text-align: center;
+}
+.art{
+	width: 90%;
+	margin-left: 5%;
+}
+.art>p{
+	width: 100%;
+	text-indent: 2em;
+	color: #808080;
+	margin-bottom: 15px;
+}

@@ -1,0 +1,85 @@
+<include file="Public/index/head.html" />
+<title>泉州海丝户外运动俱乐部-{{$nav}}</title>
+<link rel="stylesheet" href="__PUBLIC__/index/css/<if condition="$main eq 1">saishixinxi.css<elseif condition="$main eq 2"/>huwaixinxi.css<elseif condition="$main eq 3"/>
+shipin.css<elseif condition="$main eq 4"/>gongyixinxi.css</if>" />
+<link rel="stylesheet" href="__PUBLIC__/index/css/head-foot.css">
+<link rel="stylesheet" href="__PUBLIC__/index/css/jqalert.css" />
+<script src="__PUBLIC__/index/js/jquery.1.9.1.js"></script>
+<script type="text/javascript" src="__PUBLIC__/index/js/jqalert.js"></script>
+<script type="text/javascript">
+
+    //报名
+    function signup(id){
+
+        if(id != ''){
+          $.ajax({
+              type: "POST",
+              url: "{{:U('article/signup')}}",
+              data: {'id': id},
+              success: function (data) {
+                var text = data.replace(/\s/g, "");
+                if(text != ''){
+                  jqalert({
+                    title: '提示',
+                    content: text
+                  });
+                  return false;
+                }else{
+                  //确认提交
+                window.location.href = "/index.php/Home/User/info/aid/"+id;
+                } 
+              }
+          });
+        } 
+
+    }
+</script>
+</head>
+<div class="conter">
+
+    <div class="title">{{$row.articleTitle}}</div>
+	<br/>
+    <p align="center">活动日期：{{$row.addDate}}</p>
+	<br/>
+	<p align="center">报名费:{{$row.price}}元 / {{$row.vipPrice}}元(会员价)</p>
+	<br/>
+    <if condition="$main neq 3">
+        <img src="/{{$row.articleAttach}}" alt="" class="banner">
+        <div class="art">
+            {{$row.articleContent|htmlspecialchars_decode}}
+        </div>
+        <div class="gaodu"></div>
+        <if condition="$main neq 4">
+            <a href="javascript:signup({{$row.articleId}})" class="btn">我要报名</a>
+        </if>
+    </if>
+
+    <if condition="$main eq 3">
+        <div>
+            <a href="#" class="art">
+                {{$row.articleContent|htmlspecialchars_decode}}
+                <p class="art-3">
+                    9 / 20
+                    <object data="" type="">
+                        <a class="sp1">
+                            <img src="__PUBLIC__/index/images/shipin.png" alt="" /> 235532
+                        </a>
+                    </object>
+                </p>  
+            </a>    
+        </div>
+        <div class="jieshu-5">
+            <p>
+                <volist name="rows" id="vo">    
+                    <a href="{{:U('Article/detail',array('main'=>$main,'id'=>$vo['articleId']))}}">
+                        <img src="{{$vo.articleAttach}}" alt="">
+                        <span>{{$vo.articleTitle}}</span>
+                    </a>
+                </volist>
+            </p>
+        </div>
+    </if>
+</div>
+<include file="Public/index/share.html" />
+</body>
+</html>

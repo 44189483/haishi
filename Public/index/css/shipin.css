@@ -1,0 +1,126 @@
+/*按钮*/
+a{
+	text-decoration: none;
+	color: #4d4d4d;
+}
+.title{
+	text-align: center;
+	font-size: 18px;
+	background-color: #fff;
+}
+.date{
+	color: #ccc;
+	line-height: 35px;
+	text-align: center;
+	background-color: #fff;
+}
+
+
+
+.art{
+	display: block;
+	text-decoration: none;
+	color: #4d4d4d;
+	width: 94%;
+	min-height: 100px;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #fff;
+	border-bottom: solid 1px #d0d0d0;
+	position: relative;
+	margin-bottom: 10px;
+}
+.art-1{
+	width: 100%;
+	font-size: 15px;
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	color: #808080;
+    margin-bottom: 10px;
+}
+.art-2{
+	width: 100%;
+	color: #666;
+	font-size: 12px;
+}
+.art-3{
+	width: 100%;
+	color: #808080;
+	font-size: 14px;
+	line-height: 30px;
+}
+.sp1{
+	display: inline-block;
+	color: #808080;
+	border-radius: 5px;
+	padding-left: 4px;
+	padding-right: 4px;
+    text-align: center;
+    line-height: 30px;
+    float: right;
+}
+.sp1>img{
+	width: 15px;
+	margin-right: 5px;
+}
+
+
+
+.jieshu-5{
+	width: auto !important;
+	height: 170px;
+	border-bottom: solid 1px #d0d0d0;
+	overflow-x:auto;
+	overflow-y:hidden;
+	white-space: nowrap; 
+}
+.jieshu-5>p{
+	width: 96% !important;
+	margin-left: 2%;
+	white-space: nowrap;
+}
+.jieshu-5::-webkit-scrollbar-thumb{
+	background-color: red;
+	color: red;
+	border-radius: 5px;
+} 
+.jieshu-5::-webkit-scrollbar{width:0px;height: 0px;}
+.jieshu-5::-webkit-scrollbar-thumb{background-color:#b2b2b2;}
+.jieshu-5::-webkit-scrollbar-thumb:hover {background-color:#ff4d24}
+.jieshu-5::-webkit-scrollbar-thumb:active {background-color:#ff4d24}
+.jieshu-5>p>a{
+	width: 100px;
+	height: auto;
+	display: inline-block;
+	position: relative;
+	margin-right: 15px;
+	color: #666;
+	text-decoration: none;
+	text-align: center;
+	word-wrap:break-word;
+}
+.jieshu-5>p>a>embed{
+	width: 100px;
+    height: 90px;
+	position: relative;
+	z-index: 10;
+}
+.jieshu-5>p>a>img{
+	width: 100px;
+    height: 90px;
+	position: relative;
+	z-index: 10;
+}
+.jieshu-5>p>a>span{
+	display: block;
+	width: 100px;
+	height: 55px;
+	word-break:normal;
+    display:block; 
+    white-space:pre-wrap;
+    word-wrap : break-word;
+    overflow: hidden ;
+}

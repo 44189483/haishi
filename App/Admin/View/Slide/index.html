@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>轮播图管理</title>
+	<link rel="stylesheet" href="__PUBLIC__/admin/css/style.css" />
+	<script src="__PUBLIC__/admin/js/jquery-1.7.1.min.js"></script>
+	<script src="__PUBLIC__/admin/js/jQuery.plus.extend.js"></script>
+	<script src="__PUBLIC__/admin/js/jquery.main.js"></script>
+	<script language="javascript">
+	<!--
+		String.prototype.Trim = function(){
+			return this.replace(/(^\s*)|(\s*$)/g, "");
+		}
+		function checkform(form){
+			if(form.attchment.value.Trim()==""){
+				Alert("图片必须选择!");
+				return false;
+			}
+		}
+	//-->
+	</script>
+</head>
+
+<body class="bodyGrey">
+	<div class="mainTitle">banner图片管理</div>
+	<div class="table01">
+	<form action="__URL__/save<neq name="sid" value="">/sid/{{$sid}}</neq>" method="POST" enctype="multipart/form-data" name="form1" <eq name="sid" value="0">onSubmit="return checkform(this)"</eq>>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<th>标题</th>
+				<td><input class="w380h24" type="text" name="title" value="{{$row.title}}" /><span>* 50个字符以内</span></td>
+			</tr>
+			<tr>
+				<th>链接</th>
+				<td><input class="w380h24" type="text" name="link" value="{{$row.link}}" /></td>
+			</tr>
+			<neq name="row['url']" value="">
+		    <tr>
+			  <th>&nbsp;</th>
+			  <td>
+			  	<img src="__ROOT__/{{$row.url}}" width="200"/>
+			  	<input type="hidden" name="img" value="{{$row.url}}"/>
+			  </td>
+		    </tr>
+		    </neq>
+			<tr>
+				<th>图片上传</th>
+				<td>
+					<input type="file" name="attchment" size="35" />
+					<span>图片尺寸：1920px*636px;文件大小：500K以内；</span></td>
+			</tr>
+			<tr>
+				<th>图片排序</th>
+				<td>
+					<input class="w75h24" type="text" name="ord" id="ord" value="<eq name="row['ord']" value="">0<else/>{{$row.ord}}</eq>" onafterpaste="this.value=this.value.replace(/\D/g,'')" onkeyup="this.value=this.value.replace(/\D/g,'')"/>
+					<span>数值越大，排序越靠前</span></td>
+			</tr>
+			<tr>
+				<th>&nbsp;</th>
+				<td height="50">
+					<input type="hidden" name="sid" value="{{$sid}}"/>
+					<input class="btn02" type="submit" value="提交"/>
+				</td>
+			</tr>
+		</table>
+	  </form>
+	</div>
+	<div class="mainTitle">已上传图片</div>
+	<div class="mainBanner">
+		<neq name="rows" value="">
+		<p>单击图片修改相应信息</p>
+		<ul>
+			<volist id="i" name="rows">
+			<li>
+				<a href="__URL__/index/sid/{{$i.id}}">
+					<img src="__ROOT__/{{$i.url}}" height="100" />
+				</a>
+				<span>({{$i.ord}})</span>
+				<a class="del" href="__URL__/del/sid/{{$i.id}}" title="删除" onclick="return confirm('确认要删除？');"></a>
+				<p><a href="{{$i.link}}" target="_blank">{{$i.title}}</a></p>
+			</li>
+			</volist>
+		</ul>
+		<else/>
+			<p>暂无图片上传</p>
+		</neq>
+	</div>
+	<!--mainBanner block end-->
+</body>
+</html>

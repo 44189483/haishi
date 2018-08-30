@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>{{$nav}}发布</title>
+	<link rel="stylesheet" href="__PUBLIC__/admin/css/style.css" />
+	<script src="__PUBLIC__/admin/js/jquery-1.7.1.min.js"></script>
+	<script src="__PUBLIC__/admin/js/jQuery.plus.extend.js"></script>
+	<script src="__PUBLIC__/admin/js/jquery.main.js"></script>
+
+	<link rel="stylesheet" href="__PUBLIC__/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="__PUBLIC__/editor/plugins/code/prettify.css" />
+	<script charset="utf-8" src="__PUBLIC__/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="__PUBLIC__/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="__PUBLIC__/editor/plugins/code/prettify.js"></script>
+	<script src="__PUBLIC__/My97DatePicker/WdatePicker.js"></script>
+	<script type="text/javascript">
+	<!--
+		String.prototype.Trim = function()
+		{
+			return this.replace(/(^\s*)|(\s*$)/g, "");
+		}
+
+		function checkform(form){
+			if (form.cid.value==""){
+				Alert("栏目必选!");
+				return false;
+			}
+			if (form.title.value.Trim()==""){
+				Alert("标题必须填写!");
+				form.title.focus();
+				return false;
+			}
+			<eq name="row['articleId']" value="">
+			if (form.attchment.value==""){
+				Alert("图片必选!");
+				return false;
+			}
+			</eq>
+			if (form.title.value.length>50){
+				Alert("标题长度在50个字以内!");
+				form.title.focus();
+				return false;
+			}
+			if (form.content.value.Trim()==""){
+				Alert("内容必须填写!");
+				form.content.focus();
+				return false;
+			}
+		}		
+	//-->
+	</script>
+	<if condition="($main neq 3)">
+	<script>
+		KindEditor.ready(function(K) {
+			editor1 = K.create('textarea[name="content"]', {
+			cssPath : '__PUBLIC__/editor/plugins/code/prettify.css',
+			uploadJson : '__PUBLIC__/editor/php/upload_json.php',
+			fileManagerJson : '__PUBLIC__/editor/php/file_manager_json.php',
+			allowFileManager : true,
+			afterCreate : function() {
+				var self = this;
+				K.ctrl(document, 13, function() {
+					self.sync();
+					K('form[name=form1]')[0].submit();
+				});
+				K.ctrl(self.edit.doc, 13, function() {
+					self.sync();
+					K('form[name=form1]')[0].submit();
+				});
+			},afterBlur: function(){this.sync();}
+		});
+		prettyPrint();
+	});
+	</script>
+	</if>
+</head>
+
+<body class="bodyGrey">
+	<div class="mainTitle">
+	  <p>{{$nav}}发布</p>
+    </div>
+	<div class="table01">
+		<form action="__URL__/save/main/{{$main}}/<neq name="row['articleId']" value="">act/edit/id/{{$row.articleId}}<else/>act/add</neq>" method="POST" name="form1" enctype="multipart/form-data" onSubmit="return checkform(this);">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<th>栏目</th>
+				<td>
+					<select name="cid" class="w380h24">
+	                    <option value="">-所属栏目-</option>
+	                    <volist id="i" name="select"> 
+	                    <option value="{{$key}}" <if condition="$key==$row['classId']">selected="selected"</if>>-{{$i}}-</option>			
+	                    </volist>
+                	</select>
+                </td>
+			</tr>
+			<tr>
+				<th>标题</th>
+				<td><input class="w380h24" type="text" name="title" value="{{$row.articleTitle}}" /><span>* 50个字符以内</span></td>
+			</tr>
+			<if condition="($main eq 3)">
+			<tr>
+			  <th>视频</th>
+			  <td><textarea name="content" style="width:300px;height:100px;">{{$row.articleContent}}</textarea></td>
+            </tr>
+			<else />
+			<neq name="row['articleAttach']" value="">
+		    <tr>
+			  <th>&nbsp;</th>
+			  <td>
+			  	<img src="__ROOT__/{{$row.articleAttach}}" width="200"/>
+			  	<input type="hidden" name="img" value="{{$row.articleAttach}}"/>
+			  </td>
+		    </tr>
+		    </neq>
+			<tr>
+				<th>图片上传</th>
+				<td>
+					<input type="file" name="attchment" size="35" />
+					<span>图片尺寸：1920px*636px;文件大小：500K以内；</span>
+				</td>
+			</tr>
+			<tr>
+			  <th>内容</th>
+			  <td><textarea name="content" style="width:700px;height:300px;visibility:hidden;">{{$row.articleContent}}</textarea></td>
+            </tr>
+            </if>
+            <tr>
+				<th width="50">活动时间</th>
+				<td><input type="text" class="Wdate" name="date" onclick="WdatePicker()" readonly="readonly" value="<eq name="row.addDate" value="">{{$Think.const.NOW_TIME|date="Y-m-d",###}}<else/>{{$row.addDate}}</eq>"></td>
+			</tr>
+			<if condition="($main eq 1) OR ($main eq 2)">
+			<tr>
+				<th>会员价</th>
+				<td><input class="w75h24" type="text" name="vipPrice" value="{{$row.vipPrice}}" onkeyup="this.value=this.value.replace(/[^0-9.]/g,'')" /> 元</td>
+			</tr>
+			<tr>
+				<th>非会员价</th>
+				<td><input class="w75h24" type="text" name="price" value="{{$row.price}}" onkeyup="this.value=this.value.replace(/[^0-9.]/g,'')" /> 元</td>
+			</tr>
+			</if>
+            <tr>
+				<th>排序</th>
+				<td>
+					<input class="w75h24" type="text" name="ord" value="<eq name="row.articleOrd" value="">0<else/>{{$row.articleOrd}}</eq>" onafterpaste="this.value=this.value.replace(/\D/g,'')" onkeyup="this.value=this.value.replace(/\D/g,'')"/>
+					<span>数值越大，排序越靠前</span></td>
+			</tr>
+			<tr>
+				<th>发布</th>
+				<td>
+					<input type="checkbox" name="check" value="1" <eq name="row.articleShow" value="1">checked="checked"</eq>/>
+				</td>
+			</tr>
+			<tr>
+				<th>&nbsp;</th>
+				<td>
+					<input type="hidden" name="id" value="{{$row.articleId}}"/>
+					<input class="btn02" type="submit" name="submit" value="确认发布" />
+					<input class="btn02" type="button" value="取消返回" onclick="window.history.back();"/>
+				</td>
+            </tr>
+		</table>
+	  </form>
+	</div>
+</body>
+</html>

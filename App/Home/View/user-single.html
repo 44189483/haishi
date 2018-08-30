@@ -1,0 +1,14 @@
+<include file="Public/index/head.html" />
+<title>泉州海丝户外运动俱乐部-{{$nav}}</title>
+<link rel="stylesheet" href="__PUBLIC__/index/css/huiyuanzhidu.css" />
+<link rel="stylesheet" href="__PUBLIC__/index/css/head-foot.css" />
+</head>
+<body>
+<div class="conter">
+    
+    <div class="title">{{$nav}}</div>
+    <div class="art">
+        {{$row.articleContent|htmlspecialchars_decode}}
+    </div>
+<include file="Public/index/share.html" />
+<include file="Public/index/foot.html" />

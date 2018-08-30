@@ -1,0 +1,93 @@
+/*按钮*/
+a{
+	text-decoration: none;
+	color: #4d4d4d;
+}
+.head{
+	width: 100%;
+	background-color: #4d4d4d;
+	position: relative;
+	margin-bottom: 0px !important;
+	border-bottom: solid 1px #d0d0d0;
+	color: #fff;
+}
+.art{
+	display: block;
+	text-decoration: none;
+	color: #4d4d4d;
+	width: 94%;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-image: url(../images/bg.png);
+	background-size: 100% 100%;
+	position: relative;
+	margin-bottom: 10px;
+	margin-top: -2px;
+}
+.art1{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 3%;
+    margin-bottom: 5px;
+    border: solid 5px #fff;
+    border-radius: 50%;
+}
+.art2{
+	width: 30px;
+	position: absolute;
+	top: 5%;
+	right: 5%;
+}
+.art3{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+    margin-bottom: 10px;
+}
+.art4{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 23%;
+}
+
+
+/*导航*/
+.nav{
+	width: 96%;
+	margin-left: 2%;
+	background-color: #fff;
+	border-radius: 20px;
+	border-bottom: solid 1px #ccc;
+	font-size: 0px;
+	margin-top: -20%;
+	position: relative;
+	z-index: 3;
+}
+.nav>a{
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	color: #808080;
+}
+.nav>a>img{
+	width: 20%;
+	margin-left: 40%;
+	display: block;
+	margin-bottom: 5px;
+}
+.nav>span{
+	display: inline-block;
+	position: absolute;
+	left: 10%;
+	top:auto;
+	width: 80%;
+	border-bottom: solid 1px #ededed;
+}

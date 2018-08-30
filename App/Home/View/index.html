@@ -1,0 +1,57 @@
+<include file="Public/index/head.html" />
+<title>泉州海丝户外运动俱乐部</title>
+<link rel="stylesheet" href="__PUBLIC__/index/css/index.css">
+<link rel="stylesheet" href="__PUBLIC__/index/css/head-foot.css">
+<script src="__PUBLIC__/index/js/jquery.1.9.1.js"></script>
+<script src="__PUBLIC__/index/js/cs.js"></script>
+</head>
+<div class="conter">
+	<div class="head">
+		<img src="__PUBLIC__/index/images/head-bg.png" alt="" />
+		<img src="__PUBLIC__/index/images/logo.png" alt="" />
+	</div>
+
+    <!-- 轮播 -->
+    <div class="middle_right">
+    	<div id="lunbobox">
+        	<!--<div id="toleft">&lt;</div>-->
+            <div class="lunbo">
+            	<volist name="banner" id="vo">
+                <a href="{{$vo.link}}">
+                    <img src="/{{$vo.url}}" />
+                    <p>{{$vo.title}}</p>
+                </a>
+                </volist>
+            </div>
+            <ul>
+            	<volist name="banner" id="vo">
+                <li></li>
+                </volist>
+            </ul>
+        	<span></span>
+        </div>
+    </div>
+
+	<!-- 赛事信息 -->
+	<div class="event"> 
+		<p class="event1"><span>赛事信息</span><a href="{{:U('Article/index',array('main'=>1))}}">MORE</a></p>
+		<volist name="saishi" id="vo">
+		<a href="{{:U('Article/detail',array('main'=>1,'id'=>$vo['articleId']))}}" class="event2">
+			<img src="{{$vo.articleAttach}}" alt="" />
+			<p>{{$vo.articleTitle|msubstr=###,0,15,'utf-8'}}</p>
+			<span>{{$vo.articleContent|htmlspecialchars_decode|strip_tags|msubstr=###,0,40,'utf-8'}}</span>
+			<p style="clear:both;display:block"></p>
+		</a>
+		</volist>
+	</div>
+
+    <!-- 公益培训 -->
+	<div class="welfare"> 
+		<p class="welfare1"><span>公益培训</span><a href="{{:U('Article/index',array('main'=>3))}}">MORE</a></p>
+		<div class="welfare2">
+			<p>{{$peixun.articleTitle}}</p>
+			{{$peixun.articleContent|htmlspecialchars_decode}}
+		</div>
+	</div>
+<include file="Public/index/share.html" />
+<include file="Public/index/foot.html" />

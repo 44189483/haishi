@@ -1,0 +1,24 @@
+<include file="Public/index/head.html" />
+<title>泉州海丝户外运动俱乐部-通知信息</title>
+<link rel="stylesheet" href="__PUBLIC__/index/css/head-foot.css" />
+<link rel="stylesheet" href="__PUBLIC__/index/css/tongzhi.css" />
+<!--
+<script src="__PUBLIC__/index/js/jquery.1.9.1.js"></script>
+<script src="__PUBLIC__/index/js/07gonggao.js"></script>
+-->
+</head>
+<body>
+<div class="conter">
+    
+    <volist name="rows" id="vo">
+    <div class="art">
+        <p class="art1">
+            <img src="__PUBLIC__/index/images/dian.png" alt="">
+            <span>{{$vo.articleTitle}}</span>
+        </p>
+        <p class="art2">{{$vo.addDate}}</p>
+        <p class="art3">{{$vo.articleContent}}</p>
+    </div>
+    </volist>
+<include file="Public/index/share.html" />
+<include file="Public/index/foot.html" />

@@ -1,0 +1,675 @@
+[ 2018-08-14T11:10:04+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0010s ]
+
+[ 2018-08-14T11:10:05+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0010s ]
+
+[ 2018-08-14T11:10:21+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0010s ]
+
+[ 2018-08-14T11:11:06+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:11:08+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0010s ]
+
+[ 2018-08-14T11:11:08+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:11:10+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:11:16+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:11:17+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0010s ]
+
+[ 2018-08-14T11:11:45+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-14T11:11:53+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:12:19+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:12:55+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:12:57+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0010s ]
+
+[ 2018-08-14T11:12:57+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:12:58+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:12:59+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:12:59+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:12:59+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:12:59+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0010s ]
+
+[ 2018-08-14T11:13:00+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:13:00+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:13:00+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:13:00+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:13:01+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:13:01+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:13:01+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:13:01+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0010s ]
+
+[ 2018-08-14T11:13:02+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:13:02+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:13:02+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:13:14+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0010s ]
+
+[ 2018-08-14T11:13:15+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:13:27+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:13:28+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:14:15+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:14:23+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:14:24+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:16:40+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-14T11:17:55+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] require(../../Common/Org/Util/Wechat.class.php): failed to open stream: No such file or directory E:\phpStudy\PHPTutorial\WWW\haishi\App\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] require(../../Common/Org/Util/Wechat.class.php): failed to open stream: No such file or directory E:\phpStudy\PHPTutorial\WWW\haishi\App\Home\Controller\IndexController.class.php 第 10 行.
+
+[ 2018-08-14T11:18:10+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] require(../Common/Org/Util/Wechat.class.php): failed to open stream: No such file or directory E:\phpStudy\PHPTutorial\WWW\haishi\App\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] require(../Common/Org/Util/Wechat.class.php): failed to open stream: No such file or directory E:\phpStudy\PHPTutorial\WWW\haishi\App\Home\Controller\IndexController.class.php 第 10 行.
+
+[ 2018-08-14T11:22:09+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0010s ]
+
+[ 2018-08-14T11:24:07+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0010s ]
+
+[ 2018-08-14T11:24:11+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:24:20+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:24:21+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:24:22+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0010s ]
+
+[ 2018-08-14T11:24:34+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:25:29+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:25:30+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0010s ]
+
+[ 2018-08-14T11:25:32+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:25:49+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0010s ]
+
+[ 2018-08-14T11:25:50+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:26:01+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0010s ]
+
+[ 2018-08-14T11:31:57+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-08-14T11:32:12+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2018-08-14T11:32:13+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Index
+
+[ 2018-08-14T11:32:29+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:32:30+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:32:31+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:32:42+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-14T11:32:52+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0000s ]
+
+[ 2018-08-14T11:33:10+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hs_option` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hs_option` WHERE ( optionType="wx" )  [ RunTime:0.0010s ]
+
